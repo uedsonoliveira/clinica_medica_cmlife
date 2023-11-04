@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/*header*/
+.cabecalho{
+    background-color: rgb(58, 162, 227);
+    width: 100%;
+    height: 80px;    
+}
+
+.limita-secao{
+    max-width: 100%;
+    height: 80px;
+    margin: 0 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-logo img{
+    width: 100px;
+}
+
+.navegacao a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navegacao ul{
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao a:hover{
+    color: #0000008c;
+}
+
+/*container-link-especialidade*/
+.link-especialidade{
+    max-width: 100%;
+}
+
+.nav-especialidade ul{
+    width: 100%;
+    padding: 20px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.nav-especialidade a{
+    text-decoration: underline rgb(58, 162, 227) 2px;
+    font-weight: 700;
+    color: #0000008c;
+}
+
+.nav-especialidade a:hover{
+    color: rgb(58, 162, 227);
+    text-decoration: underline #0000008c 2px;
+}
+
+/*container-info-especialidade*/
+.container-info-especialidade{
+    width: 100%;
+}
+.limita-secao-especialidade{
+    margin: 0 25%;
+    max-width: 100%;
+}
+
+.info-especialidade{
+    text-align: center;
+    padding: 20px 0px;
+    line-height: 30px;
+    color: #0000008c;
+}
+
+.info-especialidade h2{
+    padding-bottom: 30px;
+}
+
+/*container-img-tabela*/
+.container-img-tabela{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.limita-img-especialidade{
+    max-width: 100%;
+    margin: 0 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-especialidade{
+    max-width: 100%;
+}
+
+.img-especialidade img{
+    width: 250px;
+    height: 200px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*tabela-especialidades*/
+.container-tabela-especialidade{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabela-especialidade{
+    width: 100%;
+    height: 200px;
+    border-collapse:collapse;
+}
+ 
+.tabela-especialidade th{
+    text-align: start;
+    background-color: rgb(58, 162, 227);
+    color: #ffffff;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.tabela-especialidade td{
+    padding-left: 10px;
+}
+
+.tabela-especialidade tbody tr:nth-child(odd){
+    background-color: #4f464652;
+    color: #0000008c;
+    font-weight: 700;
+}
+
+.tabela-especialidade tbody tr:nth-child(even){
+    background-color: #4c414127;
+    color: #0000008c;
+    font-weight: 700;
+}
+
+/*rodape*/
+.rodape{
+    width: 100%;
+    background-color: rgb(58, 162, 227);
+}
+
+.secao-rodape img{
+    width: 100px;
+}
+
+.secao-rodape{
+    padding: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secao-rodape p{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.secao-rodape span{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.secao-rodape a{
+    color: #fff;
+    font-weight: 900;
+}
+
+.secao-rodape a:hover{
+    color: #0000008c;
+}
+
+/*media query*/
+/*largura maxima de 425px*/
+@media (max-width: 425px){
+    .img-especialidade img{
+        display: none;
+    }
+
+    .tabela-especialidade td{
+        font-size: 12px;
+    }
+
+    .secao-rodape p{
+        font-size: 12px;
+    }
+}
+
+/*largura maxima de 850px*/
+@media (max-width:850px){
+    .img-logo{
+        width: 100%;
+        border-bottom: 1px solid rgba(88, 81, 81, 0.431);
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .limita-secao-especialidade{
+        margin: 0 5%;
+    }
+
+    .limita-img-especialidade{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .img-especialidade img{
+        margin-bottom: 20px;
+        border-radius: 5%;
+        box-shadow: 1px 1px 5px 1px rgb(58, 162, 227);
+    }
+
+    .tabela-especialidade td{
+        font-size: 12px;
+    }
+}
+

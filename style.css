@@ -1,0 +1,321 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+/*cabecalho*/
+.cabecalho{
+    background-color: rgb(58, 162, 227);
+    width: 100%;
+    height: 80px;    
+}
+
+.limita-secao{
+    max-width: 100%;
+    height: 80px;
+    margin: 0 10%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.img-logo img{
+    width: 100px;
+}
+
+/*navegacao*/
+.navegacao a{
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navegacao ul{
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navegacao a:hover{
+    color: #0000008c;
+}
+
+/*recepcao*/
+.img-recepcao{
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/recepcao.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.img-recepcao h1, h2{
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    padding-left: 20px;
+}
+
+/*container-info*/
+.limita-secao-info{
+    max-width: 100%;
+    margin: 0 25%;
+}
+
+.secao-info{
+    text-align: center;
+    padding: 50px 0px;
+    line-height: 30px;
+    color: #0000008c;
+}
+
+.secao-info h3{
+    font-weight: 900;
+    padding-bottom: 20px;
+}
+
+/*container-sobre*/
+.limita-secao-sobre{
+    max-width: 100%;
+    margin: 0 25%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.lista-secao-sobre{
+    color: #0000008c;
+}
+
+.lista-secao-sobre h4{
+    padding-bottom: 20px;
+}
+
+.img-secao-sobre img{
+    width: 200px;
+}
+
+/*container-imagens*/
+.container-imagens{
+    width: 100%;
+}
+
+.limita-secao-img{
+    margin: 0 10%;
+    max-width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-especialidades{
+    text-align: center;
+    padding-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.container-quarto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 230px;
+}
+
+.container-quarto a{
+    color: #0000008c;
+}
+
+.container-quarto a:hover{
+    color: rgb(58, 162, 227);
+}
+
+.img-especialidades img{
+    width: 100%;
+    border-radius:5% 5% 0 0;
+}
+
+.img-especialidades figcaption{
+    font-weight: 700;
+    padding: 10px;
+}
+
+.img-especialidades figure{
+    box-shadow: 1px 1px 5px 1px rgb(58, 162, 227);
+    border-radius: 5%;
+}
+
+/*container-botao-horario*/
+.container-botao-horario{
+    width: 100%;
+}
+
+.botao-horario{
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao-horario button{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(58, 162, 227);
+    border: none;
+}
+
+.botao-horario a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.botao-horario button:hover{
+    background-color: rgb(0, 0, 255);
+}
+
+.secao-info span{
+    font-weight: 900;
+}
+
+/*container-iframe*/
+.container-iframe{
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.limita-secao-iframe{
+    margin: 0 10%;
+    max-width: 100%;
+}
+
+/*rodape*/
+.rodape{
+    width: 100%;
+    background-color: rgb(58, 162, 227);
+}
+
+.secao-rodape img{
+    width: 100px;
+}
+
+.secao-rodape{
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.secao-rodape p{
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.secao-rodape span{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.secao-rodape a{
+    color: #fff;
+    font-weight: 900;
+}
+
+.secao-rodape a:hover{
+    color: #0000008c;
+}
+
+/*media query*/
+/*largura maxima de 425px*/
+@media(max-width: 425px){
+
+    .img-logo{
+        width: 100%;
+        border-bottom: 1px solid rgba(88, 81, 81, 0.431);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-recepcao h1, h2{
+        width: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .limita-secao-sobre img{
+        display: none;
+    }
+
+    .lista-secao-sobre{
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .img-especialidades img{
+        width:250px;
+    }
+    
+    .secao-rodape p{
+        font-size: 12px;
+    }
+}
+
+/*largura maxima de 768px*/
+@media (max-width: 768px) {
+    .img-logo{
+        width: 100%;
+        border-bottom: 1px solid rgba(88, 81, 81, 0.431);
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }    
+
+    .img-recepcao h1, h2{
+        width: 100%;
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-size: 30px;
+        font-weight: 800;
+    }
+
+    .limita-secao-sobre img{
+        display: none;
+    }
+}
+
+
